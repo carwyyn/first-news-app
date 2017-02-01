@@ -2,6 +2,20 @@
 <html lang="en">
     <head></head>
     <body>
-        <h1>Deaths during the L.A. riots</h1>
+        <h1>Crashes in Wales 2015</h1>
+        <table border=1 cellpadding=7>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Speed Limit</th>
+            </tr>
+            {% for obj in object_list %}
+            <tr>
+                <td>{{ obj.Date }}</td>
+                <td>{{ obj.Time }}</td>
+                <td>{{ obj.Speed_limit }} </td>
+            </tr>
+            {% endfor %}
+        </table>
     </body>
 </html>
