@@ -11,7 +11,7 @@
             </tr>
             {% for obj in object_list %}
             <tr>
-                <td>{{ obj.Date }}</td>
+                <td><a href="{{ obj.id}}/">{{ obj.Date }}</a>a></td>
                 <td>{{ obj.Time }}</td>
                 <td>{{ obj.Speed_limit }} </td>
             </tr>
